@@ -134,7 +134,7 @@ To draw our sine wave, we will use the `polyline` function.  To use this functio
 
 ```
 let points = (0..50).map(|i| {
-      let x = (i as f32 - 25.0);          //subtract 25 to center the sine wave
+      let x = i as f32 - 25.0;          //subtract 25 to center the sine wave
       let point = pt2(x, x.sin()) * 20.0; //scale sine wave by 20.0
       (point, STEELBLUE)
     });
